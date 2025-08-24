@@ -5,45 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> My Weather application </title>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-  <div>
+  <div class="container">
+
     <header>
-      <form id="city-search">
-        <input type="text" placeholder="Enter city name">
-        <input type="submit" value="search">
+      <form id="city-search" class="city-search">
+        <input type="text" placeholder="Enter city name" class="city-search-input">
+        <input type="submit" value="search" class="search-button-input">
       </form>
     </header>
+
     <main>
-      <div>
-        <h1>
-          city name
-        </h1>
-        <p>
-          Friday 29 may, clear sky
-        </p>
-      </div>
-      <div>
-        <span>24</span><span>°C</span><span>☀️</span>
-      </div>
-      <br />
-      <div class="test">
-        <div>Sunrise</div>
-        <div>Sunset</div>
-        <div>Humidity</div>
-        <div>Wind</div>
+      <div class="weather-app-data">
+
+        <div>
+          <h1 class="city-name">
+            city name
+          </h1>
+          <p class="current-day-details">
+            Friday 29 may, clear sky
+          </p>
+          <div class="weather-app-details">
+            <div>Sunrise</div>
+            <div>Sunset</div>
+            <div>Humidity</div>
+            <div>Wind</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="weather-app-temperature ">24</span><span class="weatehr-app-unit">°C</span><span
+            class="weather-app-icon">☀️</span>
+        </div>
+
       </div>
     </main>
-    <br />
     <footer>
       This project was coded by <a href="">Fazeleh Alipour</a> and is <a href="">open-sourced on GitHub</a> and hosted
       on
       Netlify.
     </footer>
+
   </div>
 </body>
 
