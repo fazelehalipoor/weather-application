@@ -13,7 +13,7 @@
 
     <header>
       <form id="city-search" class="city-search">
-        <input type="text" placeholder="Enter city name" class="city-search-input">
+        <input type="text" placeholder="Enter city name" class="city-search-input" id="city-search-input">
         <input type="submit" value="search" class="search-button-input">
       </form>
     </header>
@@ -22,26 +22,26 @@
       <div class="weather-app-data">
 
         <div>
-          <h1 class="city-name">
+          <h1 class="city-name" id="city-name">
             city name
           </h1>
           <p class="current-day-details">
             Friday 29 may, clear sky
           </p>
           <div class="weather-app-details">
-            <div>Sunrise
+            <div class="sunrise">Sunrise
               <br />
               <strong>5:15</strong>
             </div>
-            <div>Humidity
+            <div class="humidity">Humidity
               <br />
               <strong>5:15</strong>
             </div>
-            <div>Sunset
+            <div class="sunset"> Sunset
               <br />
               <strong>5:15</strong>
             </div>
-            <div>Wind
+            <div class="wind">Wind
               <br />
               <strong>5:15</strong>
             </div>
@@ -61,7 +61,7 @@
       on
       Netlify.
     </footer>
-
+    <script src="src/script.js"></script>
   </div>
 </body>
 

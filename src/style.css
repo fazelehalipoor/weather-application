@@ -21,7 +21,7 @@ header {
   width: 70%;
   border: none;
   border-bottom: 1px solid #000;
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 20px;
   margin-right: 10px;
   background-color: rgb(255, 255, 255, 0.8);
@@ -49,6 +49,7 @@ header {
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
+  text-align: center;
 }
 
 .weather-app-details {
@@ -58,7 +59,6 @@ header {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
-  font-weight: 500;
   margin: 30px 0px;
 }
 .weather-app-details div {
@@ -76,6 +76,8 @@ header {
 
 .weatehr-app-unit {
   font-size: 28px;
+  position: relative;
+  bottom: 25px;
 }
 .weather-app-icon {
   font-size: 45px;
