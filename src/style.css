@@ -1,10 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f9f7fe;
+  background-color: #000;
 }
 a {
-  color: #885df1;
-  text-decoration: none;
+  color: #622bed;
+  color: rgba(0, 0, 0, 0.9);
 }
 .container {
   max-width: 600px;
@@ -12,7 +12,7 @@ a {
   display: block;
   padding: 25px;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
 }
 header {
   padding: 0 0 30px 0;
@@ -20,18 +20,20 @@ header {
 .city-search-input {
   width: 70%;
   border: none;
-  border-bottom: 1px solid #000;
+  border-radius:13px;
   font-size: 15px;
   padding: 15px 20px;
   margin-right: 10px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
 }
 .search-button-input {
   border: none;
-  border-bottom: 1px solid #000;
   padding: 15px 30px;
-  background-color: #fff;
   font-size: 16px;
+  color: rgba(39, 33, 66, 0.7);
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 .weather-app-data {
@@ -47,7 +49,7 @@ header {
 }
 .current-day-details {
   margin: 0 auto;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   text-align: center;
 }
@@ -55,14 +57,18 @@ header {
 .weather-app-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 12px;
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(0, 0, 0, 0.5);
   line-height: 24px;
   margin: 30px 0px;
 }
 .weather-app-details div {
   border-bottom: 1px solid #000;
+  padding: 5px;
+}
+.weather-app-details div strong {
+  color: rgba(0, 0, 0, 0.6);
 }
 .weather-app-temperature-container {
   display: flex;
