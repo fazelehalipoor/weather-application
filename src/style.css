@@ -1,11 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #000;
+  background-color: #84a59d;
 }
-a {
-  color: #622bed;
-  color: rgba(0, 0, 0, 0.9);
-}
+
 .container {
   max-width: 600px;
   margin: 45px auto;
@@ -40,6 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0px 40px;
+  text-align: left;
 }
 .city-name {
   margin: 0 auto;
