@@ -17,7 +17,7 @@ header {
 .city-search-input {
   width: 70%;
   border: none;
-  border-radius:13px;
+  border-radius: 13px;
   font-size: 15px;
   padding: 15px 20px;
   margin-right: 10px;
@@ -49,7 +49,6 @@ header {
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
-  text-align: center;
 }
 
 .weather-app-details {
@@ -84,7 +83,8 @@ header {
   bottom: 25px;
 }
 .weather-app-icon {
-  font-size: 45px;
+  width: 88px;
+  height: 88px;
 }
 footer {
   border-top: 1px solid #f9f7fe;

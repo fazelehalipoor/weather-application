@@ -7,6 +7,7 @@ function refreshWeather(response) {
   let description = document.querySelector("#description");
   let date = new Date();
   let timeElement = document.querySelector("#time");
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -14,6 +15,7 @@ function refreshWeather(response) {
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   description.innerHTML = `${response.data.condition.description}`;
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function formatDate(date) {
   let dateOfMonth = date.getDate();
