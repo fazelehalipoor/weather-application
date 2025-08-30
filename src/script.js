@@ -16,6 +16,7 @@ function refreshWeather(response) {
   description.innerHTML = `${response.data.condition.description}`;
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+  updateBackground(response.data.condition.description.toLowerCase());
 }
 function formatDate(date) {
   let dateOfMonth = date.getDate();
@@ -56,6 +57,31 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#city-search-input");
 
   searchCity(searchInput.value);
+}
+
+function updateBackground(condition) {
+  let app = document.querySelector(".weather-app");
+
+  if (condition.includes("rain")) {
+    app.style.backgroundImage =
+      "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/987/original/rainy.jpg?1756511978')";
+  } else if (condition.includes("clear")) {
+    app.style.backgroundImage =
+      "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/985/original/sunny.jpg?1756511350')";
+  } else if (condition.includes("cloud", "thunder")) {
+    app.style.backgroundImage =
+      "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/989/original/cloud.jpg?1756512047')";
+  } else if (condition.includes("snow")) {
+    app.style.backgroundImage =
+      "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/986/original/snowy.jpg?1756511898')";
+  } else {
+    app.style.backgroundImage =
+      "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/988/original/default.jpg?1756512000')";
+  }
+
+  app.style.backgroundSize = "cover";
+  app.style.backgroundPosition = "center";
+  app.style.backgroundRepeat = "no-repeat";
 }
 
 let citySearchForm = document.querySelector("#city-search");
