@@ -83,8 +83,32 @@ function updateBackground(condition) {
   app.style.backgroundPosition = "center";
   app.style.backgroundRepeat = "no-repeat";
 }
+function displayForecast() {
+  let days = ["sun", "mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>15º</strong>
+          </div>
+          <div class="weather-forecast-temperature">9º</div>
+        </div>
+      </div>
+    `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 
 let citySearchForm = document.querySelector("#city-search");
 citySearchForm.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Tehran");
+displayForecast();
